@@ -10,7 +10,7 @@ INCLUDES=-I./include -I/opt/local/include
 LDFLAGS=-L/usr/local/lib 
 LDLIBS=-lpthread
 
-CXXFLAGS= -g -wall
+CXXFLAGS= -g -Wall
 
 DIR_OBJ=objs
 
