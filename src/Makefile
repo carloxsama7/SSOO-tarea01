@@ -5,9 +5,8 @@ RM=rm -f
 
 TARGET=../hora
 
-
-INCLUDES=-I./include -I/opt/local/include
 LDFLAGS=-L/usr/local/lib 
+
 LDLIBS=-lpthread
 
 CXXFLAGS= -g -Wall
@@ -29,7 +28,7 @@ $(TARGET): $(OBJS)
 $(DIR_OBJ)/%.o: %.c
 	@echo Compiling [$@]
 	@mkdir -p $(DIR_OBJ)
-	@$(CXX) -c -o $@ $< $(CXXFLAGS) $(INCLUDES)
+	@$(CXX) -c -o $@ $< $(CXXFLAGS) 
 
 clean:
 	@$(RM) $(OBJS)
